@@ -72,9 +72,6 @@ const goToMyProfilePage = () => {
             <i class="fas fa-user mr-2"></i> My Profile
           </button>
           <div class="dropdown-divider" v-show="auth.user?.role != 'Super Admin'"></div>
-          <router-link :to="{name: 'user.shop'}" class="dropdown-item" v-show="auth.user?.role != 'Super Admin'">
-            <i class="fas fa-home mr-2"></i> My Shop
-          </router-link>
           <div class="dropdown-divider"></div>
           <a href="javascript::void(0);" class="dropdown-item" @click="handleLogout">
             <i class="fas fa-power-off mr-2"></i> Logout

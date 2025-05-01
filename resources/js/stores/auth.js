@@ -94,38 +94,6 @@ export const useAuth = defineStore("auth", {
       }
     },
 
-    async updateShopImage(data) {
-      try {
-        const res = await axiosInstance.post("/update/shop/image",data);
-        if (res.status === 200) {
-          this.user.shop.logo = res.data;
-        }
-      } catch (error) {
-          console.log(error)
-      } finally {
- 
-      }
-    },
-    async updateShopInfo(form) {
-      try {
-        const res = await axiosInstance.post('/simple/update/shop',form);
-        if (res.status === 200) {
-          this.user.shop.mall = form.mall
-          this.user.shop.name = form.name
-          this.user.shop.branch_name = form.branch_name
-          return new Promise((resolve) => {
-            resolve(res.data);
-          });
-        }
-      } catch (error) {
-        if (error.response.data) {
-          this.errors = error.response.data.errors
-        }
-      }finally{
-        
-      }
-    },
-
 
     async updateProfileImage(data) {
       try {

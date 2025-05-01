@@ -96,9 +96,6 @@ const changePassword = async () => {
                     <b>Location:</b> <a class="float-right">{{auth.user?.shop?.mall?.location}}</a>
                   </li>
                 </ul>
-
-                <router-link :to="{name: 'user.shop'}" class="btn btn-primary btn-block" v-show="auth.user.role != 'Super Admin'"><b>View Shop</b></router-link>
-
               </div>
               <!-- /.card-body -->
             </div>

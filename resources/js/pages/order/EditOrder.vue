@@ -15,9 +15,7 @@ let counter = reactive(0);
 let payment_counter = reactive(0);
 
 const form = reactive({
-    sale_id: route.params?.id,
     user_id: auth.user.id,
-    shop_id: auth.user.shop.id,
     customer: null,
     date: null,
     sub_total: 0,

@@ -37,7 +37,6 @@ onMounted(async()=>{
   await pinia_address.fetchDivisions()
   const resData = await pinia_user.fetchInitialData(route.params?.id, auth.user?.shop?.id)
   form.id = resData.user.id
-  form.shop_id = resData.user.shop_id
   form.role_name = resData.user.role
   form.name = resData.user?.name
   form.email = resData.user?.email
