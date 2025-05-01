@@ -1,0 +1,27 @@
+php artisan optimize
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan serve
+
+
+php artisan migrate:fresh --seed
+
+
+Cron Jobs
+/usr/local/bin/php /home/bitrainb/public_html/pos.bitrainbd.com/artisan test:log >> /dev/null 2>&1
+
+
+
+Super Admin Token
+8|hEHIMWazR9mCBGCeIYgzHL3yqY5CzEWLRUany7uqca23b98e
+
+Owner Token
+16|2NZ1kjCz9R1RY3LTIctsZbHH0SrpHzBpVPF4Dx4W1cdd7817
+
+
+Employee Token
+9|YbZy6Me4pPYx71MYgYlpL4W4pqAXv3GtvXTVchpl324b3714
+
+
+long, cheast, belly, hip, shoulder, hand_long_full, kop, throat, total_loose, enclosure, front_cheast, front_belly, front_hip, wrap, arm, kop_arm

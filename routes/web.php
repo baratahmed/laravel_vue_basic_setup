@@ -1,0 +1,31 @@
+<?php
+
+use App\Http\Controllers\PrintController;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('app');
+});
+
+Route::get('/print/order/{id}', [PrintController::class,'printOrder']);
+
+Route::get('/{any}', function () {
+    return view('app');
+})->where('any','.*');
+
+Route::get('/{any}/{any2}', function () {
+    return view('app');
+})->where('any','.*');
+
+
